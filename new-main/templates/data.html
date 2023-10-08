@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Plotly Chart</title>
+</head>
+<body>
+    <section>
+        <div class="box">
+          <div class="detail-box">
+            <p>
+                <div align = "center">
+                    <font size="20">
+                        <b>METHANE EMIT</b>
+                    </font>
+                    <font size="5">  
+                        <br>The picture Aboveis a map produced by NASA detection of severe methane emissions around the world. Zoom map in! You can easily know methane emission everywhere.
+                    </font>
+                </div>
+            </p>
+    </section>
+    <div align ="center">
+        <map_fig_html.update_layout(mapbox_style="open-street-map")>
+        <map_fig_html.update_layout(margin={"r":0, "t":50, "l":0, "b":10})>
+        {{ map_fig_html | safe }}
+    </div>
+    <section>
+        <div class="box">
+          <div class="detail-box">
+            <p>
+                <div align = "center">
+                    <font size="20"><b>INTRODUCTION OF METHANE</b></font>
+                    <font size="5">  
+                        <br><b>SAFTY</b>:Currently, there are no specified occupational exposure limits for methane gas. The National Institute for Occupational Safety and Health's (NIOSH) in the<br> United States recommends a maximum of 1000 ppm (0.1%) during an eight-hour work period.
+                        <br><b>DANGER</b>:Methane is a highly flammable and
+                        explosive gas, quickly ignited when
+                        exposed to heat, sparks or flames. When
+                        CH4 accumulates, 5 – 15% by volume,
+                        within a mixture of air, it forms a highly
+                        explosive gas. Above 15% (150,000
+                        ppm), insufficient oxygen is present in
+                        the air.
+                        <br><b>GREENHOUSE GAS</b>:Methane has been rapidly increased.The global warming potential (GWP) for methane is about 84 in terms of its impact over a 20-year timeframe. That means it traps 84 times more heat per mass unit than carbon dioxide (CO2) and 105 times the effect when accounting for aerosol interactions.
+                    </font>
+                </div>
+            </p>
+      </section>
+</body>
